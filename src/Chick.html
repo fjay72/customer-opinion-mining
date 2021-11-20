@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+ 
+<html>
+ 
+<head>
+    <title>
+        Chick-fil-a
+    </title>
+	<meta content="">
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script>
+	  $(function() {
+	   $("#visible").click(function(){
+		$('#invisible').toggleClass("show");
+              });
+            });
+	</script>
+	<script>
+	  $(function() {
+	   $("#visb").click(function(){
+		$('#invisb').toggleClass("show");
+              });
+            });
+	</script>
+	<script>
+	  $(function() {
+	   $("#vis").click(function(){
+		$('#invis').toggleClass("show");
+              });
+            });
+	</script>
+	<style>
+	.hide{display:none;}
+	.show{display:block;}
+	</style>
+</head>
+<style>
+.info{
+text-align:center;
+}
+</style>
+<body>
+<img src="../img/chick.png" alt="Chick-fil-a" width = "200 px" height = "200 px"/><br>
+
+<p id="visible"><img src="../img/happy.png" alt="Happy" width = "90 px" height = "90 px"></p>
+<div class="info"><p id="invisible" class="hide">Best Chicken burgers<br>Customer service is great<br>Available 24/7</p></div>
+<p id="image_label"><span>60 %</span></p>
+
+<p id="visb"><img src="../img/Neutral.png" alt="Neutral" width = "80 px" height = "80 px"></p>
+<div class="info"><p id="invisb" class="hide">Small range of options<br>Lot of waiting time</p></div>
+<p id="image_label"><span>30 %</span></p>
+
+<p id="vis"><img src="../img/Sad.png" alt="Sad" width = "90 px" height = "90 px"></p>
+<div class="info"><p id="invis" class="hide">Very expensive</p></div>
+<p id="image_label"><span>10 %</span></p>
+
+</div>
+</body>
+</html>
